@@ -1,0 +1,78 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    background-color: rgb(4,30,66); 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keypad{
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(255,184,28);
+    /* border-radius: 4px; */
+    overflow: hidden; 
+}
+
+.display{
+    background-color: rgb(255,255,255);
+    height: 100px;  
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+    color: rgb(4,30,66);
+}
+
+.display-1{
+    opacity: .4;
+    font-size: 20px;
+    height: 20px;   
+    overflow: hidden;
+}
+
+.result{
+    position: absolute;
+    bottom: 0;
+    left: 10;  
+    font-size: 20px;
+    opacity: .4;
+}
+
+.all-buttons{
+    color: whitesmoke;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.button{
+    border: .5px solid whitesmoke;
+    /* display: inline-block; */
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.button.clear{
+    background-image: url(https://cms.nhl.bamgrid.com/images/photos/319517972/1200x630/cut.png);
+    background-size: 200px;
+    grid-column: 1/5;
+}
+
+.button:hover{
+    background-color: goldenrod;
+}
