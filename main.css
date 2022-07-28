@@ -7,8 +7,8 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 section{
-    background-color: rgb(4,30,66); 
-    /* background-image: url(https://img.freepik.com/premium-photo/ice-background-with-marks-from-skating-hockey-blue-texture-rink-surface-with-scratches_130111-1970.jpg?w=2000); */
+    /* background-color: rgb(4,30,66);  */
+    background-image: url(https://img.freepik.com/premium-photo/ice-background-with-marks-from-skating-hockey-blue-texture-rink-surface-with-scratches_130111-1970.jpg?w=2000);
     background-size: 1400px;
     height: 100vh;
     width: 100%;
@@ -20,7 +20,7 @@ section{
 .keypad{
     width: 100%;
     max-width: 400px;
-    background-color: rgb(255,184,28);
+    background-color: rgb(255,184,28, .28);
     /* border-radius: 4px; */
     overflow: hidden; 
 }
@@ -47,7 +47,7 @@ section{
     bottom: 0;
     left: 10;  
     font-size: 20px;
-    opacity: .4;
+    opacity: .3;
 }
 
 .all-buttons{
@@ -58,7 +58,7 @@ section{
 
 .button{
     border: .5px solid whitesmoke;
-    /* display: inline-block; */
+    display: inline-block;
     height: 100px;
     width: 100%;
     display: flex;
@@ -70,6 +70,7 @@ section{
 
 .button.clear{
     background-image: url(https://cms.nhl.bamgrid.com/images/photos/319517972/1200x630/cut.png);
+    opacity: .28;
     background-size: 200px;
     grid-column: 1/5;
 }

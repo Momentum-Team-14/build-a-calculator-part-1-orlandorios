@@ -5,7 +5,7 @@ const numbersEl = document.querySelectorAll(".number");
 const operationEl = document.querySelectorAll(".op");
 const equalEl = document.querySelector(".equal");
 const clearEl = document.querySelector(".clear");
-const clearLastEl = document.querySelector(".last-entity-clear");
+
 let dis1Num = "";
 let dis2Num = "";
 let result = null;
@@ -61,7 +61,7 @@ function mathOperation() {
     result = parseFloat(result) % parseFloat(dis2Num);
   }
 }
-// operation();
+operation();
 
 equalEl.addEventListener("click", () => {
   if (!dis2Num || !dis1Num) return;
